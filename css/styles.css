@@ -123,6 +123,9 @@ span {
   font-size: 14px;
   line-height: 1.14;
   color: var(--secondary-text-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-contact-item:not(:last-child) {
@@ -142,15 +145,24 @@ span {
   margin-right: 10px;
 }
 
-.icon:hover,
-.icon:focus {
-  fill: var(--accent-color);
+.smartphone {
+  width: 10px;
+  height: 16px;
 }
 
 .header-contact {
   display: flex;
   margin-left: auto;
   justify-content: auto;
+}
+
+.header-contact-list {
+  display: flex;
+}
+
+.header-contact-list:hover .icon,
+.header-contact-list:focus .icon {
+  fill: var(--accent-color);
 }
 
 /*--------------------HERO--------------------*/
@@ -328,6 +340,7 @@ span {
   height: 44px;
 
   padding: 12px;
+  border-radius: 50%;
 }
 
 .social-item:hover {
@@ -398,6 +411,7 @@ span {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-right {
